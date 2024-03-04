@@ -15,4 +15,3 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - HTML: Linguagem de marcação para estruturação da página web.
 - CSS: Linguagem de estilo para estilização da página web.
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
-<br>
