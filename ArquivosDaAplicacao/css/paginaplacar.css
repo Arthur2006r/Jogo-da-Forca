@@ -1,0 +1,54 @@
+/*  Grid do corpo da página (botao, titulo e container)  */ 
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "botaovoltar"
+                         "titulo"
+                         "tabelacss";
+}
+
+#botaovoltar {
+    grid-area: botaovoltar;
+}
+/* Estilização da seta */ 
+.seta {
+    height: 9vh;
+    background-color: #FFDE59;
+    border-radius: 70%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding: 8px;
+}
+/* */ 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 85px;
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+    color: #043D8B;
+}
+
+#tabelacss {
+    margin-top: 9vh;
+    grid-area: tabelacss;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0.3em 0.3em 0.3em #00000047 ; 
+    font-family: 'Fredoka One', cursive;
+}
+
+#tabelaRodape {
+    font-family: 'Fredoka One', cursive;
+}
+
+#tabela {
+    background-color: #ffcc008e;
+}
+
+.thead-dark {
+    background-color: #043D8B;
+    color: #FFDE59;
+}

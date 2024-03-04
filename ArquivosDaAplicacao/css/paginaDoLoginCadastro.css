@@ -1,0 +1,88 @@
+/* Grid do corpo da página (botoes e titulo) */
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "botaovoltar botaovoltar"  
+                         "titulo titulo"
+                         "botoes";
+}
+
+#botaovoltar {
+    grid-area: botaovoltar;
+}
+/* Estilização da seta */ 
+.seta {
+    height: 9vh;
+    background-color: #FFDE59;
+    border-radius: 70%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding: 8px;
+}
+/* */ 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 70px;
+    color: #043D8B;
+    margin-top: 9vh;
+    text-shadow: -0.06em -0.01em #FFDE59 ;    
+}
+
+#botoes {
+    grid-area: botoes;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-areas: "botao1 botao2";
+    justify-content: space-around;
+}
+
+#botao1 {
+    grid-area: botao1;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 39px;
+    margin-top: 25vh;
+}
+
+#botao2 {
+    grid-area: botao2;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 39px;
+    margin-top: 25vh;
+}
+
+/* Estilo dos botoes */
+.botestilo1 {
+    background-color: #004BAF;
+    border-radius: 45px;
+    padding: 17px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-decoration: none;
+    color: #FFDE59;
+}
+
+.botestilo1:hover {
+    background-color: #0d69e1;
+    color: #f4c81a;
+}
+
+.botestilo2 {
+    border-radius: 45px;
+    padding: 15px;
+    padding-left: 19px;
+    padding-right: 19px;
+    text-decoration: none;   
+    background-color: #006aff;
+    color: #ffd83d;
+}
+
+.botestilo2:hover {
+    color: #FFDE59;
+    background-color: #3470C2;
+}

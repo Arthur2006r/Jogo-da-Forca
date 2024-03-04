@@ -1,0 +1,333 @@
+/* Grid do corpo da página (botoes e titulo) */
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "usuariodiv"
+                         "titulos"
+                         "forpa"
+                         "teclado";
+}
+
+#usuariodiv {
+    grid-area: usuariodiv;
+    text-align: start;
+    font-family: 'Fredoka One', cursive;
+    color: #043D8B;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 0.5vh;
+    margin-left: 1vw;       
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+}
+
+
+#titulos {
+    grid-area: titulos;
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "p1 p2 p3 p4";
+    
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+    font-size: 35px;
+    color: #043D8B;
+    text-shadow: -0.06em -0.01em #FFDE59 ;    
+    margin-left: 1vw;
+}
+
+#p1 {
+    grid-area: p1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "tem"
+                         "dif";
+    
+}
+
+#p2 {
+    grid-area: p2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "temr"
+                         "difc";
+    
+}
+
+#p3{
+    grid-area: p3;
+}
+
+#p4{
+    grid-area: p4;
+}
+
+.dicatext {
+    font-size: 25px;
+    font-weight: 900;
+    margin-top: 1.7vh;
+    color: #043c8bc0;
+}
+
+.solutext {
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 1.7vh;
+    color: #FFDE59;
+}
+
+/* Css das áreas dos títulos */
+#tem {
+    grid-area: tem;
+}
+#temr {
+    grid-area: temr;
+}
+#dif {
+    grid-area: dif;
+}
+#difc {
+    grid-area: difc;
+}
+/* */
+
+#forpa {
+    grid-area: botao1;
+    display: flex;
+    grid-template-areas: "forca palavra";
+    margin-top: 5vh;
+    margin-left: 3vw;
+}
+/* Organização da forca e da palavra oculta */
+#forca {
+    grid-area: forca;
+}
+
+/* Edição imagem forca */
+.imagemforca {
+    width: 15vw;
+    height: 30vh;
+}
+/* */
+
+#palavra {
+    grid-area: palavra;
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 13vh;
+    margin-left: 7vw;
+}
+/* Ajuste das letras da palavra oculta */
+.letrasdapalavra {
+    font-size: 80px;
+    padding-left: 39px;
+    font-family:  'Fredoka One', cursive;
+}
+/**/
+
+/* css da tabela da palavra oculta */
+#tabela {
+    width: 50vw;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+}
+/**/
+
+/* Ajuste da imagem da forca */
+.imgforca {
+    width: 13vw;
+}
+/* */
+/* */
+
+#teclado {
+    grid-area: botao2;
+    margin-left: 15%;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "teclado1"
+                         "teclado2"
+                         "teclado3";
+    grid-gap: 40px;
+}
+/* Organização do teclado */
+.cssteclas {
+    background-color: #3470C2;
+    color: #FFDE59;
+    font-weight: 900;
+    padding: 9px;
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0.1em 0.1em 0.2em #00000047 ; 
+}
+
+.cssteclas:hover {
+    background-color: #1454ae;
+    color: #d9b421;
+}
+
+#teclado1 {
+    display: flex;
+    grid-template-areas: "q w e r t yy u i o p";
+    justify-content: space-evenly;
+}
+#q {
+    grid-area: q;
+}
+#w {
+    grid-area: w;
+}
+#e {
+    grid-area: e;
+}
+#r {
+    grid-area: r;
+}
+#t {
+    grid-area: t;
+}
+#y {
+    grid-area: yy;
+}
+#u {
+    grid-area: u;
+}
+#i {
+    grid-area: i;
+}
+#o {
+    grid-area: o;
+}
+#p {
+    grid-area: p;
+}
+
+#teclado2 {
+    display: flex;
+    grid-template-areas: "a s d f g h j k l";
+    justify-content: space-evenly;
+}
+#a {
+    grid-area: a;
+}
+#s {
+    grid-area: s;
+}
+#d {
+    grid-area: d;
+}
+#f {
+    grid-area: f;
+}
+#g {
+    grid-area: g;
+}
+#h {
+    grid-area: h;
+}
+#j {
+    grid-area: h;
+}
+#k {
+    grid-area: k;
+}
+#l {
+    grid-area: l;
+}
+
+#teclado3 {
+    display: flex;
+    grid-template-areas: "z xx c v b n m";
+    justify-content: center;
+    grid-gap: 5%;
+}
+#z {
+    grid-area: z;
+}
+#x {
+    grid-area: xx;
+}
+#c {
+    grid-area: c;
+}
+#v {
+    grid-area: v;
+}
+#b {
+    grid-area: b;
+}
+#n {
+    grid-area: n;
+}
+#m {
+    grid-area: m;
+}
+/**/
+/* Edição do button das letras */
+   button {
+    border: 0;
+   }
+
+/* css do botão desabilitado  */
+.tecladesabilitado {
+    background-color: #346fc280;
+    color: #ffde598d;
+    font-weight: 900;
+    padding: 9px;
+    border-radius: 10px;
+    height: 55px;
+    width: 55px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 25px;
+    text-align: center;
+    box-shadow: 0.1em 0.1em 0.2em #00000047 ;
+}
+
+.dicadesabilitado {
+    border-radius: 100px;
+    margin-left: 47vw;
+    height: 9vh;
+    width: 9vw;
+    margin-top: 1vh;
+    border: 3px solid #043c8ba3;
+    background-color: #ffde5999;   
+}
+
+.botaoDica{
+    border-radius: 100px;
+    margin-left: 47vw;
+    height: 9vh;
+    width: 9vw;
+    margin-top: 1vh;
+    border: 3px solid #043D8B;
+    background-color: #FFDE59;
+}
+
+.botaoSol{
+    border-radius: 100px;
+    margin-left: 1vw;
+    height: 9vh;
+    width: 9vw;
+    margin-top: 1vh;
+    border: 3px solid #FFDE59;
+    background-color: #043D8B;
+}
+
+.botaoSol:hover {
+    border: 3px solid #fdd537;
+    background-color: #0f3d7e;
+}
+
+.soludesabilitado {
+    border: 3px solid #fdd537af;
+    background-color: #0f3d7eb0;
+}
+
+/* */
+
+/* */

@@ -1,0 +1,76 @@
+/* Grid do corpo da página (botoes e titulo) */
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "botaovoltar botaovoltar"  
+                         "titulo titulo"
+                         "formulario"
+                         "botao";
+}
+
+#botaovoltar {
+    grid-area: botaovoltar;
+}
+/* Estilização da seta */ 
+.seta {
+    height: 9vh;
+    background-color: #FFDE59;
+    border-radius: 70%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding: 8px;
+}
+/* */ 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 70px;
+    color: #043D8B;
+    margin-top: 9vh;
+    text-shadow: -0.06em -0.01em #FFDE59 ;    
+}
+
+#formulario {
+    grid-area: formulario;
+    margin-top: 7vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: #FFDE59;
+    padding: 50px;
+    border-radius: 50px;
+    border: 3px solid #004BAF;
+    box-shadow: 0.3em 0.3em 0.3em #00000047 ; 
+}
+
+.tituloform {
+    font-family: 'Fredoka One', cursive;
+    color: #043D8B;
+    font-weight: 900;   
+}
+
+#botao button{
+    grid-area: botao1;
+    font-family: 'Fredoka One', cursive;
+    font-size: 26px;
+    margin-top: 7vh;
+    border: none;
+}
+
+/* Estilo dos botoes */
+.botestilo1 {
+    background-color: #043D8B;
+    border-radius: 45px;
+    padding: 17px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-decoration: none;
+    color: #daba3d;
+}
+
+.botestilo1:hover {
+    background-color: #0d69e1;
+    color: #f4c81a;
+}

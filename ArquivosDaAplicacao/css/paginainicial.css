@@ -1,0 +1,67 @@
+/* Grid do corpo da página (botoes e titulo) */
+#corpopagina {
+    display: grid;
+    background-color: brown;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo"
+                         "botao1"
+                         "botao3";
+}
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 90px;
+    color: #043D8B;
+    margin-top: 9vh;
+    text-shadow: -0.06em -0.01em #FFDE59 ;    
+}
+
+#botao1 {
+    grid-area: botao1;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 39px;
+    margin-top: 25vh;
+}
+
+#botao3 {
+    grid-area: botao3;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    margin-top: 9vh;
+}
+
+/* Estilo dos botoes */
+.botestilo1 {
+    background-color: #004BAF;
+    border-radius: 45px;
+    padding: 17px;
+    padding-left: 29px;
+    padding-right: 29px;
+    text-decoration: none;
+    color: #FFDE59;
+}
+
+.botestilo1:hover {
+    background-color: #006aff;
+    color: #ffd83d;
+}
+
+.botestilo3 {
+    background-color: #ffd83d;
+    border-radius: 45px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    color: #004BAF;
+}
+
+.botestilo3:hover {
+    background-color: #a6880f;
+    color: #0a428a;
+}

@@ -1,0 +1,130 @@
+/*  Grid do corpo da página (botao, titulo e container)  */ 
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "botaovoltar"
+                         "titulo"
+                         "areadostemas"
+                         "usuariodiv";
+}
+
+#usuariodiv {
+    grid-area: usuariodiv;
+    text-align: start;
+    font-family: 'Fredoka One', cursive;
+    color: #043D8B;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 15vh;
+    margin-left: 0.5vw;
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+}
+
+#botaovoltar {
+    grid-area: botaovoltar;
+}
+/* Estilização da seta */ 
+.seta {
+    height: 9vh;
+    background-color: #FFDE59;
+    border-radius: 70%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding: 8px;
+}
+/* */ 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 85px;
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+    color: #043D8B;
+}
+
+#areadostemas {
+    grid-area: areadostemas;
+    margin-top: 15vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "entreterimento diversao"
+                         "ciencia comida";
+}
+/* Estilização dos botões dos temas */
+#entreterimento {
+    grid-area: entreterimento;
+    border-radius: 45px;
+    padding: 23px;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#diversao {
+    grid-area: diversao;
+    border-radius: 45px;
+    padding: 23px;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#ciencia {
+    grid-area: ciencia;
+    border-radius: 45px;
+    padding: 23px;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-family: 'Fredoka One', cursive;
+}
+
+#comida {
+    grid-area: comida;
+    border-radius: 45px;
+    padding: 23px;
+    padding-left: 5px;
+    padding-right: 15px;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Estilo do link dos botoes */ 
+.botestilo1 {
+    font-size: 30px;
+    background-color: #004BAF;
+    border-radius: 45px;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #FFDE59;
+    border: 0px;
+}   
+
+.botestilo1:hover {
+    background-color: #0d69e1;
+    color: #f4c81a;
+}
+/* */
+/* Estilo das fotos dos temas */ 
+.imagemtema {
+    height: 12vh;
+    margin: 0 auto;
+}
+
+.imagemtema2 {
+    height: 11vh;
+    padding: 14px;
+    margin-bottom: 1vh;
+}
+
+.imagemtema3 {
+    height: 11vh;
+    margin-bottom: 8px;
+}
+/* */
+/* */

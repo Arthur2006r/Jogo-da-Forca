@@ -1,0 +1,95 @@
+/*  Grid do corpo da página (botao, titulo e container)  */ 
+#corpopagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "botaovoltar"
+                         "titulo"
+                         "areadadificuldade"
+                         "usuariodiv";
+}
+
+#usuariodiv {
+    grid-area: usuariodiv;
+    text-align: start;
+    font-family: 'Fredoka One', cursive;
+    color: #043D8B;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 3vh;
+    margin-left: 0.5vw;
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+}
+
+#botaovoltar {
+    grid-area: botaovoltar;
+}
+/* Estilização da seta */ 
+.seta {
+    height: 9vh;
+    background-color: #FFDE59;
+    border-radius: 70%;
+    margin-top: 2vh;
+    margin-left: 3vh;
+    padding: 8px;
+}
+/* */ 
+
+#titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 800;
+    font-size: 85px;
+    color: #043D8B;
+    text-shadow: -0.06em -0.01em #FFDE59 ; 
+}
+
+#areadadificuldade {
+    grid-area: areadadificuldade;
+    margin-top: 15vh;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "facil"
+                         "medio"
+                         "dificil";
+    grid-gap: 70px;
+}
+/* Estilização dos botões dos temas */
+#facil {
+    grid-area: facil;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+}
+
+#medio {
+    grid-area: medio;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+}
+
+#dificil {
+    grid-area: dificil;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 900;
+}
+
+/* Estilo do link dos botoes */ 
+.botestilo1 {
+    font-size: 30px;
+    background-color: #004BAF;
+    border-radius: 45px;
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-decoration: none;
+    color: #FFDE59;
+    border: 0px;
+}
+
+.botestilo1:hover {
+    background-color: #0d69e1;
+    color: #f4c81a;
+}
+/* */
+/* */

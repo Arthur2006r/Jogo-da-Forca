@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0">
+    <title>Jogo da Forca!</title>
+    <link rel="stylesheet" href="css/paginadaforca.css">
+    <link rel="stylesheet" href="css/stylegeral.css">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap - CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/logoForca.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/logoForca.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/logoForca.png">
+    <link rel="icon" type="image/png" href="imagens/logoForca.png" />
+</head>
+
+<body background="imagens/fotodefundo.jpg" onload="MontarJogo()">
+
+    <div id="corpodapagina">
+        <div id="usuariodiv">
+            <label>
+                usuário:
+            </label>
+            <label id="usuario">
+
+            </label>
+        </div>
+        <div id="titulos">
+            <div id="p1">
+                <label id="tem">
+                    Tema forca:
+                </label>
+                <label id="dif">
+                    Dificuldade:
+                </label>
+            </div>
+            <div id="p2">
+                <label id="temr">
+
+                </label>
+                <label id="difc">
+
+                </label>
+            </div>
+            <div id="p3">
+                <button id="dica" class="botaoDica" onclick="CliqueDica()">
+                    <p class="dicatext" id="areaDica">Dica 1x</p>
+                </button>
+            </div>
+            <div id="p4">
+                <a href="solucionarPalavra.html">
+                    <button id="solu" class="botaoSol" onclick="AdicionarCTSol()">
+                        <p class="solutext" id="areasolu">Solucionar</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <div id="forpa">
+            <label id="forca">
+                <img src="forcas/forca0.png" class="imagemForca" id="forcaIM">
+            </label>
+            <div id="palavra">
+                <table id="tabela">
+                    <tr class="letrasdapalavra">
+
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div id="teclado">
+            <div id="teclado1">
+                <button id="q letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('Q' , 0)">Q</button>
+                <button id="w letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('W' , 1)">W</button>
+                <button id="e letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('E' , 2)">E</button>
+                <button id="r letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('R' , 3)">R</button>
+                <button id="t letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('T' , 4)">T</button>
+                <button id="y letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('Y' , 5)">Y</button>
+                <button id="u letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('U' , 6)">U</button>
+                <button id="i letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('I' , 7)">I</button>
+                <button id="o letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('O' , 8)">O</button>
+                <button id="p letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('P' , 9)">P</button>
+            </div>
+            <div id="teclado2">
+                <button id="a letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('A' , 10)">A</button>
+                <button id="s letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('S' , 11)">S</button>
+                <button id="d letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('D' , 12)">D</button>
+                <button id="f letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('F' , 13)">F</button>
+                <button id="g letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('G' , 14)">G</button>
+                <button id="h letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('H' , 15)">H</button>
+                <button id="j letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('J' , 16)">J</button>
+                <button id="k letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('K' , 17)">K</button>
+                <button id="l letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('L' , 18)">L</button>
+            </div>
+            <div id="teclado3">
+                <button id="z letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('Z' , 19)">Z</button>
+                <button id="x letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('X' , 20)">X</button>
+                <button id="c letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('C' , 21)">C</button>
+                <button id="v letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('V' , 22)">V</button>
+                <button id="b letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('B' , 23)">B</button>
+                <button id="n letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('N' , 24)">N</button>
+                <button id="m letrasHTML" class="teclas cssteclas" onclick="ConferirLetra('M' , 25)">M</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/javascripitJogo.js"></script>
+    <script src="js/javascripitDoCadastroLogin.js"></script>
+    <script src="js/javascripitDoPlacar.js"></script>
+    <script src="js/javascripitSolucionarPalavra.js"></script>
+
+</body>
+
+</html>
