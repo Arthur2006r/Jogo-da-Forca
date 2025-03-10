@@ -16,5 +16,8 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - CSS: Linguagem de estilo para estilização da página web.
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
 
-[📹 Ver demonstração do jogo](video/VideoJogoDaForca.mp4)
+<video controls>
+  <source src="video/VideoJogoDaForca.mp4" type="video/mp4">
+  Seu navegador não suporta vídeos.
+</video>
 
