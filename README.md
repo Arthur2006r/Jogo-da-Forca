@@ -17,4 +17,4 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
 
 # Vídeo De Execução da Aplicação:
-https://github.com/Arthur2006r/Jogo-da-Forca/issues/2
+https://github.com/Arthur2006r/Jogo-da-Forca/issues/Vídeo
