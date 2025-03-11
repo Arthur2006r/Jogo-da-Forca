@@ -9,15 +9,12 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - Gameplay: O jogo permite que você selecione o tema e a dificuldade da palavra da forca.
 - Estatísticas: Acompanhamento do progresso do jogador, incluindo número de vitórias e derrotas (tudo isso exibido em um placar de todos os jogadores).
 <br>
-# Tecnologias Utilizadas:
+# Características:
 
 - JavaScript: Linguagem de programação principal.
 - HTML: Linguagem de marcação para estruturação da página web.
 - CSS: Linguagem de estilo para estilização da página web.
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
 
-<video controls>
-  <source src="video/VideoJogoDaForca.mp4" type="video/mp4">
-  Seu navegador não suporta vídeos.
-</video>
-
+# Vídeo De Execução da Aplicação:
+https://github.com/Arthur2006r/Jogo-da-Forca/issues/2
