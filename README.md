@@ -16,7 +16,7 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - CSS: Linguagem de estilo para estilização da página web.
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
 
-# Vídeo De Execução da Aplicação:
+# Vídeo de Execução da Aplicação:
 
 
 https://github.com/user-attachments/assets/5158e45a-2e01-4f31-9210-7b9d60c82136
