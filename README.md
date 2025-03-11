@@ -8,7 +8,7 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - CRUD de jogador: Você pode cadastrar sua conta: adicionando seu nickname, email e senha; e fazer login com os dados de seu perfil (os formulários contém máscara de dados - jquery).
 - Gameplay: O jogo permite que você selecione o tema e a dificuldade da palavra da forca.
 - Estatísticas: Acompanhamento do progresso do jogador, incluindo número de vitórias e derrotas (tudo isso exibido em um placar de todos os jogadores).
-<br>
+
 # Características:
 
 - JavaScript: Linguagem de programação principal.
