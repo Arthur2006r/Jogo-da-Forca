@@ -1,7 +1,12 @@
 # Jogo-da-Forca
 
 Este repositório contém uma aplicação web do clássico jogo da forca, desenvolvido em JavaScript, com o uso de HTML e CSS para a estrutura e estilização da aplicação, respectivamente. O framework Bootstrap foi utilizado para facilitar o design e a estilização.
-<br>
+
+# Vídeo de Execução da Aplicação:
+
+
+https://github.com/user-attachments/assets/5158e45a-2e01-4f31-9210-7b9d60c82136
+
 # Características:
 
 - Interface Intuitiva: Uma interface de usuário simples e intuitiva que permite aos jogadores interagirem facilmente com o jogo.
@@ -15,9 +20,4 @@ Este repositório contém uma aplicação web do clássico jogo da forca, desenv
 - HTML: Linguagem de marcação para estruturação da página web.
 - CSS: Linguagem de estilo para estilização da página web.
 - Bootstrap: Framework CSS para design responsivo e facilitar a estilização.
-
-# Vídeo de Execução da Aplicação:
-
-
-https://github.com/user-attachments/assets/5158e45a-2e01-4f31-9210-7b9d60c82136
 
